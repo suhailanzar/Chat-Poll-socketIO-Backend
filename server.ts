@@ -24,7 +24,7 @@ const PORT = process.env.PORT || 3000;
   
 const corsOptions = {
   // orgin: 'http://localhost:4200/',
-  orgin: 'https://chat-poll.vercel.app/',
+  orgin: 'https://chat-poll.vercel.app',
   optionsSuccessStatus: 200,
   credentials: true 
 }

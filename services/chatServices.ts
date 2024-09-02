@@ -10,12 +10,12 @@ interface User {
   role: string;
 }
 
-
+ 
 export function configureSocket(expressServer: httpServer) {
 
   const io = new SocketIOServer(expressServer, {
     cors: {
-      origin: "https://chat-poll.vercel.app/",
+      origin: "https://chat-poll.vercel.app",
       methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
       credentials: true,
     }
