@@ -21,10 +21,9 @@ const PORT = process.env.PORT || 3000;
 })();
 
 const corsOptions = {
-    origin: 'https://chat-poll.vercel.app',
+    origin: 'https://chat-poll.vercel.app/',
     // origin: 'http://localhost:4200/',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-    allowedHeaders: ['Content-Type', 'Authorization'],
   };
 
 app.use(express.json({limit: '50mb'}));
