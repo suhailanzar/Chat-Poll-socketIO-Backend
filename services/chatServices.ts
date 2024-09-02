@@ -18,7 +18,7 @@ export function configureSocket(expressServer: httpServer) {
       origin: "https://chat-poll.vercel.app/",
       methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
       credentials: true,
-    },
+    }
   });
 
   const rooms: Record<string, User[]> = {};

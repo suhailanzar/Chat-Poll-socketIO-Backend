@@ -20,11 +20,14 @@ const PORT = process.env.PORT || 3000;
   }
 })();
 
+
+  
 const corsOptions = {
-    origin: 'https://chat-poll.vercel.app/',
-    // origin: 'http://localhost:4200/',
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-  };
+  // orgin: 'http://localhost:4200/',
+  orgin: 'https://chat-poll.vercel.app/',
+  optionsSuccessStatus: 200,
+  credentials: true 
+}
 
 app.use(express.json({limit: '50mb'}));
 app.use(express.urlencoded({limit: '50mb', extended: true}));
