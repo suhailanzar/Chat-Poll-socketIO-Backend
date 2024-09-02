@@ -15,7 +15,7 @@ export function configureSocket(expressServer: httpServer) {
 
   const io = new SocketIOServer(expressServer, {
     cors: {
-      origin: "http://localhost:4200",
+      origin: "chat-poll.vercel.app",
       methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
       allowedHeaders: ["Content-Type"],
       credentials: true,

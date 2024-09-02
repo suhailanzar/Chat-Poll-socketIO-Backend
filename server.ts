@@ -21,7 +21,7 @@ const PORT = process.env.PORT || 3000;
 })();
 
 const corsOptions = {
-    origin: 'http://localhost:4200',
+    origin: 'chat-poll.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   };
